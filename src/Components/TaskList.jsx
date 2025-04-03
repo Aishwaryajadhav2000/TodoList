@@ -34,21 +34,27 @@ function TaskList({ todolist, setlist, task, editlists }) {
 
     return (
         <section className='tasklist'>
+            <header className={`${todolist.length === 0 ? "shownotask" : "notasks"}`}>
+                <h1>Welcome To To-Do List</h1>
+                <p>
+                Execute and manage project tasks efficiently to meet deadlines.
+                </p>
+            </header>
             <header className={`${todolist.length === 0 ? "notasks" : "showtask"}`}>
                 <div className='tasksstslength'>
                     <span>Total Tasks : {todolist.length}</span>
 
-                    <span className={`${completedtask.length === 0 ? "notasks" : ""}`}>Completed : {completedtask}</span>
+                    <span className={`complete ${completedtask.length === 0 ? "notasks" : ""}`}>Completed : {completedtask}</span>
 
-                  
 
-                    <span className={`${Pendingtask.length === 0 ? "notasks" : ""}`}>Pending : {Pendingtask}</span>
-                    <span>ToDo : {ToDotask}</span>
-                    <span>In Progress : {InProgresstask}</span>
-                    <span>Cancelled : {Cancelledtask} </span>
-                    <span>In Review : {InReviewtask} </span>
-                    <span>Testing : {Testingtask} </span>
-                    <span>On Hold : {OnHoldtask} </span>
+
+                    <span className={`Pending${Pendingtask.length === 0 ? "notasks" : ""}`}>Pending : {Pendingtask}</span>
+                    <span className='ToDo'>ToDo : {ToDotask}</span>
+                    <span className='InProgress'>In Progress : {InProgresstask}</span>
+                    <span className='Cancelled'>Cancelled : {Cancelledtask} </span>
+                    <span className='InReview '>In Review : {InReviewtask} </span>
+                    <span className='Testing'>Testing : {Testingtask} </span>
+                    <span className='OnHold'>On Hold : {OnHoldtask} </span>
 
                 </div>
                 <button onClick={clearAll} className='clrall'>Clear All</button>

@@ -59,6 +59,10 @@
 
 /* TaskList */
 
+.shownotask{
+  text-align: center;
+}
+
 .notasks {
   display: none;
 }

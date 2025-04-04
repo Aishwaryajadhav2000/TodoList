@@ -35,9 +35,9 @@ function TaskList({ todolist, setlist, task, editlists }) {
     return (
         <section className='tasklist'>
             <header className={`${todolist.length === 0 ? "shownotask" : "notasks"}`}>
-                <h1>Welcome To To-Do List</h1>
+                <h1 className='welcome'>Welcome To <b>TaskFlow</b> </h1>
                 <p>
-                Execute and manage project tasks efficiently to meet deadlines.
+                    Execute and manage project tasks efficiently to meet deadlines.
                 </p>
             </header>
             <header className={`${todolist.length === 0 ? "notasks" : "showtask"}`}>

@@ -13,7 +13,10 @@
     text-shadow: 0 0 10px #ff6b6b, 0 0 20px #ff3b3b;   
   }
 }
-
+.git{
+  margin: 25px;
+  
+}
 
 
 /* AddTask */
@@ -61,6 +64,10 @@
 
 .shownotask{
   text-align: center;
+}
+
+.welcome{
+  font-size:xx-large;
 }
 
 .notasks {
@@ -143,12 +150,6 @@
     color: white;
   }
 
-  /* div {
-    padding: 10px 0px 20px 0px;
-    border-bottom: 1px solid #dfdfdf;
-    display: flex;
-    align-items: center;
-  } */
 }
 
 .taskname {
